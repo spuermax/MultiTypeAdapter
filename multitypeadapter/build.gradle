@@ -23,13 +23,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    testCompile 'junit:junit:4.12'
-    provided "com.android.support:appcompat-v7:${supportLibraryVersion}"
-    provided "com.android.support:recyclerview-v7:${supportLibraryVersion}"
-    provided "com.android.support:support-annotations:${supportLibraryVersion}"
-    provided 'com.alibaba:fastjson:1.2.39'
+    implementation 'junit:junit:4.12'
+    api "com.android.support:appcompat-v7:${supportLibraryVersion}"
+    api "com.android.support:recyclerview-v7:${supportLibraryVersion}"
+    api "com.android.support:support-annotations:${supportLibraryVersion}"
+    api 'com.alibaba:fastjson:1.2.39'
 }

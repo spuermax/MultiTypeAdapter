@@ -13,7 +13,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        jackOptions { enabled true }
+//        jackOptions { enabled true }
     }
     buildTypes {
         release {
@@ -35,7 +35,9 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${supportLibraryVersion}"
     implementation "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}"
     //    compile 'com.github.LidongWen:MultiTypeAdapter:0.1.6'
-    compile project(':multitypeadapter')
+    implementation project(':multitypeadapter')
+//    implementation 'com.github.LidongWen:MultiTypeAdapter:1.0.1'
     implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation "com.android.support:recyclerview-v7:${supportLibraryVersion}"
     testCompile 'junit:junit:4.12'
 }
